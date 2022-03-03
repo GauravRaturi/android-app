@@ -9,9 +9,11 @@ phases:
     commands:  
       - npm i --save-dev @react-native-community/cli
       - chmod +x gradlew
-      - ./gradlew assembleDebug
+      #- ./gradlew assembleDebug
+      - ./gradlew assembleRelease
+      - ./gradlew :app:bundleRelease
       
 artifacts:
   files:
-      - '**/*.apk'
+      - '**/*.aab'
   discard-paths: 'yes'
