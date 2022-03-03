@@ -15,5 +15,6 @@ phases:
       
 artifacts:
   files:
+      - '**/*.apk'
       - '**/*.aab'
   discard-paths: 'yes'
